@@ -1,0 +1,38 @@
+#datatype
+
+import numpy as np
+x= np.array([1,2,3,4,5,6])  #int64
+print(x.dtype)
+
+import numpy as np
+x= np.array([1.4,2.4,4.5])   #float64
+print(x.dtype)
+
+
+import numpy as np
+x= np.array(["shakil","sakib"])   #<U6
+print(x.dtype)
+
+
+import numpy as np
+x= np.array(["shakil","sakib",1,2,3])   #<U21
+print(x.dtype)
+
+
+#datatype change
+
+import numpy as np
+x= np.array([1,2,3,4,5,6],dtype=np.int8)
+print(x.dtype)
+
+
+import numpy as np
+x= np.array([1,2,3,4,5,6],dtype= "f")  #[1. 2. 3. 4. 5. 6.]
+print(x.dtype)
+print(x)
+
+import numpy as np
+x= np.array([1,23,4,5])
+x_new=x.astype(float)
+print(x)
+print(x_new)
