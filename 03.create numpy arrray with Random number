@@ -1,0 +1,28 @@
+#random
+
+import numpy as np
+y= np.random.rand(4)
+print(y)
+
+
+import numpy as np
+y= np.random.rand(2,5)
+print(y)
+
+#randn()
+import numpy as np
+y= np.random.randn(4)
+print(y)
+
+#ranf()
+
+import numpy as np
+y= np.random.ranf(4)
+print(y)
+
+
+#randint()
+
+import numpy as np
+y= np.random.randint(4,20,3)
+print(y)
