@@ -1,0 +1,114 @@
+
+
+import numpy as np
+var=np.array([1,2,34,5])
+x= var+3
+print(x)
+
+
+#sum
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([3,4,5,6])
+sum=x+y
+print(sum)
+
+#sub
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([3,4,5,6])
+sub=x-y
+print(sub)
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+sum=x+y
+print(sum)
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+sub=x-y
+print(sub)
+
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+mul=x*y
+print(mul)
+
+#matrix multiplication
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+sub=x@y
+print(sub)
+
+
+# floor division
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+div=x//y
+print(div)
+
+
+
+#division
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+div=x/y
+print(div)
+
+
+
+#modulus
+
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+mod=x%y
+print(mod)
+
+
+
+#transpose
+
+import numpy as np
+x=np.array([[1,2],
+            [3,4]])
+y=np.array([[1,7],
+            [5,4]])
+
+print(x.transpose())
+
+print(y.transpose())
+
+
+#reciprocal of x is (1/X)
+import numpy as np
+var=np.array([1,2,34,5])
+x=np.reciprocal(var)
+
+print(x)
