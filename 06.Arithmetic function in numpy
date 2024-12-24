@@ -1,0 +1,41 @@
+
+
+#Arithmetic function
+
+import numpy as np
+x=np.array([1,24,5,65,7])
+print("Minimum:",np.min(x))
+print(np.argmin(x)) #positon
+
+
+import numpy as np
+x=np.array([1,24,5,65,7])
+print("Maximum:",np.max(x))
+print(np.argmax(x))
+
+
+
+#2D min max
+import numpy as np
+x=np.array([[1,23,4,5],[2,3,4,5]])
+print(np.min(x,axis=0))
+print(np.max(x,axis=0))
+print(np.min(x,axis=1))
+print(np.max(x,axis=1))
+
+#squareroot
+import numpy as np
+x=np.array([1,25,5,65,7])
+print(np.sqrt(x))
+
+import numpy as np
+x=np.array([1,25,5,65,7])
+print(np.sin(x))
+print(np.cos(x))
+
+#cumsum
+import numpy as np
+x=np.array([1,25,5,65,7])
+print(np.cumsum(x))
+
+
