@@ -1,0 +1,73 @@
+#search
+import numpy as np
+x=np.array([1,2,54,6,7,7,43,3,8])
+y=np.where(x==7)
+print(y)
+y=np.where(x/2==0)
+print(y)
+y=np.where(x%2==0)
+print(y)
+
+#scearch sort array(using binary search)
+import numpy as np
+x=np.array([1,2,54,6,7,7,43,3,8])
+y=np.searchsorted(x,7)#left to rigth
+print(y)
+
+import numpy as np
+x=np.array([1,2,54,6,7,7,43,3,8])
+y=np.searchsorted(x,7,side="right")
+print(y)
+
+#sort
+
+import numpy as np
+x=np.array([1,2,54,6,7,7,43,3,8])
+print(np.sort(x))
+
+import numpy as np
+x=np.array(["a","d","c"])
+print(np.sort(x))
+
+
+import numpy as np
+x=np.array([[1,5],[9,4]])
+print(np.sort(x))
+
+#filter
+
+import numpy as np
+x=np.array(["a","d","c"])
+y=[True,False,True]
+z=x[y]
+print(z)
+
+#Shuffle( making mixer value feom original values)
+import numpy as np
+x=np.array([1,2,54,6,7,7,43,3,8])
+np.random.shuffle(x)
+print(x)
+
+#uniqe(no show repet values)
+
+import numpy as np
+x=np.array([1,2,2,54,6,7,7,43,3,8])
+y=np.unique(x)
+#y=np.unique(x,return_index=True)
+print(y)
+
+#Flatten(two_ one dimation)
+import numpy as np
+x=np.array([[1,5],[9,4]])
+print(x.flatten())
+#print(x.flatten(order="F"))
+#print(x.flatten(order="A"))
+#print(x.flatten(order="K"))
+
+
+#Ravel
+
+import numpy as np
+x=np.array([[1,5],[9,4]])
+y=np.ravel(x)
+print(y)
