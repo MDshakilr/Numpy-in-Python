@@ -1,0 +1,30 @@
+import numpy as np
+x=np.array([1,2,3,4])
+print(x)
+y=np.insert(x,3,56)
+print(y)
+
+
+import numpy as np
+x= np.array([[[1,2,3],[4,5,6],[7,8,9]]])
+y=np.insert(x,(2,3),11)
+print(y)
+
+import numpy as np
+x= np.array([[1,2,3],[4,5,6]])
+y=np.insert(x,2,[1,2,3],axis=0)
+print(y)
+
+
+#append
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.append(x,3)
+print(y)
+
+#Delete
+
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.delete(x,1)
+print(y)
