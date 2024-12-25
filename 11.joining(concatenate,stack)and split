@@ -1,0 +1,43 @@
+
+
+#joining two array
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([4,5,6,7])
+s= np.concatenate((x,y))
+print(s)
+
+
+
+import numpy as np
+x=np.array([[1,2],[3,4]])
+y=np.array([[4,5],[6,7]])
+s= np.concatenate((x,y),axis=1)
+print(s)
+
+print()
+print()
+import numpy as np
+x=np.array([[1,2],[3,4]])
+y=np.array([[4,5],[6,7]])
+s= np.concatenate((x,y),axis=0)
+print(s)
+
+#stack
+
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([4,5,6,7])
+#s= np.stack((x,y),axis=1)
+#s=np.hstack((x,y))#row
+#s=np.vstack((x,y))#colom
+s=np.dstack((x,y))#height
+print(s)
+
+
+#split
+
+import numpy as np
+x=np.array([1,2,3,4,3])
+y=np.array_split(x,3)
+print(y)
