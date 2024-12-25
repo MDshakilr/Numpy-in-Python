@@ -1,0 +1,59 @@
+
+
+
+import numpy as np
+x=np.matrix([[1,2,3],[6,3,4]])
+print(x)
+print(type(x))
+
+#arithmetic operation in Matrix
+
+import numpy as np
+x=np.matrix([1,2,3,4])
+y=np.matrix([3,4,5,6])
+sub=x-y
+print(sub)
+
+import numpy as np
+x=np.matrix([[1,2],[2,3]])
+y=np.matrix([[3,4],[5,6]])
+mul=x*y
+print(mul)
+
+
+
+#matrix function in numpy array
+
+#transpose
+
+import numpy as np
+x=np.matrix([[1,2],[2,3]])
+y=np.matrix([[3,4],[5,6]])
+print(np.transpose(x))
+print(np.transpose(y))
+
+#swapaxes
+import numpy as np
+x=np.matrix([[1,2],[2,3]])
+print(np.swapaxes(x,0,1))
+
+#inverse
+import numpy as np
+x=np.matrix([[1,2],[2,3]])
+print(np.linalg.inv(x))
+
+#power
+import numpy as np
+x=np.matrix([[1,2],[2,3]])
+print(np.linalg.matrix_power(x,0))#n=0
+
+
+
+#determine
+
+
+import numpy as np
+from numpy.linalg import det
+matrix = np.matrix([[1, 2], [3, 4]])
+determinant = det(matrix)
+print("Determinant:", determinant)
