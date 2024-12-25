@@ -1,0 +1,59 @@
+#iteration
+import numpy as np
+x=np.array([9,8,7,6,5,4])
+for i in x:
+    print(i)
+
+
+
+
+import numpy as np
+x=np.array([[1,2,3,4],[5,4,3,7]])
+for i in x:
+    print(i)
+
+for k in x:
+    for j in k:
+        print(j)
+
+
+
+print()
+
+
+import numpy as np
+x=np.array([[[3,4,5,6],[1,2,3,4],[5,4,3,7]]])
+
+for i in x:
+    for k in x:
+        for j in k:
+            for l in j:
+                print(l)
+
+
+
+print()
+
+#reduce index
+
+import numpy as np
+x=np.array([[[3,4,5,6],[1,2,3,4],[5,4,3,7]]])
+'''
+for i in x:
+    for k in x:
+        for j in k:
+            for l in j:
+                print(l)
+
+'''
+
+for i in np.nditer(x):
+    print(i)
+
+
+
+#index + data
+import numpy as np
+x=np.array([3,8,3,4])
+for i,d in np.ndenumerate(x):
+    print(i,d)
