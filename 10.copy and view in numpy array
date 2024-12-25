@@ -1,0 +1,27 @@
+#copy and view
+
+import numpy as np
+x=np.array([1,2,3,4])
+copy=x.copy()
+print('copy:',copy)
+
+
+
+
+  #differcnce
+
+import numpy as np
+x=np.array([1,2,3,4])
+copy=x.copy()
+x[2]=30
+print('copy:',copy)
+print('original:',x)
+
+
+
+import numpy as np
+x=np.array([1,2,3,4])
+copy=x.view()
+x[2]=30
+print('copy:',copy)
+print('original:',x)
